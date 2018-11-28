@@ -3,10 +3,10 @@ This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Aaron Wilkin, their colleagues, and Chen Li.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
@@ -33,6 +33,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 import rosegraphics as rg
 
 
+
 def main():
     """ Calls the other functions in this module to demo them. """
     print_math()
@@ -46,7 +47,7 @@ def print_math():
     print(x)
 
     y = math.sin(math.pi)
-    print(The sine of PI is, y)
+    print(math.sin(math.pi), y)
 
 
 def turtle_fun():
@@ -61,7 +62,7 @@ def turtle_fun():
     alan.pen = rg.Pen('blue', 30)
     alan.paint_bucket = rg.PaintBucket('yellow')
 
-    alan.back(3 * (47 + 16)
+    alan.back(3 * (47 + 16))
     alan.begin_fill()
     alan.circle(25)
     alan.end_fill()
