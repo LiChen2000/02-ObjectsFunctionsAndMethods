@@ -94,7 +94,7 @@ def pens(color,thickness):
     turtle2 = rg.SimpleTurtle()
     turtle2.pen = rg.Pen(color, 5)
     turtle2.backward(100)
-    turtle2.speed = 1
+    turtle2.speed = 2
 
 
 
