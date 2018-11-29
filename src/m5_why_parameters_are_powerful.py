@@ -28,7 +28,7 @@ def main():
 
     #even_better_draw_circles(rg.Point(10,10), 15, 5, 'green', 5)
 
-    fucking_good_draw_circle(rg.Point(5,5), 5, 30, 'blue', 6)
+    freaking_good_draw_circle(rg.Point(5,5), 5, 30, 'blue', 6)
 
 
 
