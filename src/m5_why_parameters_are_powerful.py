@@ -26,7 +26,10 @@ def main():
     #better_draw_circles(rg.Point(100, 50), 10)
     #better_draw_circles(rg.Point(-200, 0), 20)
 
-    even_better_draw_circles(rg.Point(10,10), 15, 5, 'green', 5)
+    #even_better_draw_circles(rg.Point(10,10), 15, 5, 'green', 5)
+
+    fucking_good_draw_circle(rg.Point(5,5), 5, 30, 'blue', 6)
+
 
 
 
@@ -153,7 +156,7 @@ def better_draw_circles(point, radius):
 
 
 ###############################################################################
-# TODO: 4a.
+# DONE: 4a.
 #   In the previous _TODO_, you made a MORE POWERFUL version
 #   of   draw_circles   by introducing a new PARAMETER for the amount
 #   by which the radii of the concentric circles increase.
@@ -175,7 +178,7 @@ def better_draw_circles(point, radius):
 #   to the body of the   even_better_draw_circles   function defined below.
 #   Then add parameters and modify the code to make them work!
 #
-# TODO: 4b.
+# DONE: 4b.
 #   In   main  at the place indicated, comment-out the existing calls
 #   to  better_draw_circles  and add at least two calls to the improved
 #   even_better_draw_circles  function, to TEST that your modified code is
@@ -210,11 +213,27 @@ def even_better_draw_circles(circlecenter, radius, number, color, thickness):
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #
 # Finally, comment-out the existing calls to  even_better_draw_circles  and
 # add code in   main  to draw various circles that form a BEAUTIFUL picture!
 ###############################################################################
+def freaking_good_draw_circle(point, radius2, number2, color, thickness):
+    turtle = rg.SimpleTurtle()
+    turtle.pem = rg.Pen(color, thickness)
+    turtle.pen_up()
+    turtle.go_to(point)
+    turtle.set_heading(0)
+
+    for k in range(1, number2):
+        turtle.pen_up()
+        turtle.right(45)
+        turtle.left(135)
+        turtle.pen_down()
+        turtle.draw_circle(radius2 * k)
+
+
+
 
 
 # -----------------------------------------------------------------------------
@@ -222,11 +241,3 @@ def even_better_draw_circles(circlecenter, radius, number, color, thickness):
 # -----------------------------------------------------------------------------
 main()
 
-def main():
-    a = 4
-    answer = mystery(a + 1)
-    print(answer)
-
-def mystery(x):
-    y = x * x
-    return y
